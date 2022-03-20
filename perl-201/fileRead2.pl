@@ -16,7 +16,7 @@ $| = 1;    # This tells no output buffering. Output is seen immediately.
 
 sub main() {
 	my $file = 'C:\Avik\perlworkspace\perl\downloadedText.txt';
-	open( INPUT, $file ) or die("Input file $file not found.\n");
+	open(INPUT, $file) or die("Input file $file not found.\n");
 
 	while ( my $line = <INPUT> ) {
 		if ($line =~ /children/) {  # If line matches chindren
